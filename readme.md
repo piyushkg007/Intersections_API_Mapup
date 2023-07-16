@@ -37,3 +37,23 @@ The API uses a simple API key-based authentication mechanism. To authenticate, i
 
 The API reads the line data from a JSON file located at `./lines.json`. Ensure that the JSON file contains valid line data in the expected format.
 
+## Testing 
+On Local Hosts: use the following link to test the API https://127.0.0.1:3000/api/intersection
+
+
+The Api is  also deployed on Render use following link to check https://intersectionapi-jie0.onrender.com/api/intersection
+
+## Valid request format
+add this to post request body 
+{
+  "lineString":{
+  "type": "LineString",
+  "coordinates": [
+    [-96.79512, 32.77823],
+    [-96.79469, 32.77832],
+    [-96.79433, 32.77728]
+    ]
+  }
+}
+
+
