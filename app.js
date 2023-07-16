@@ -12,6 +12,11 @@ app.use(authenticate);
 
 // Middleware for authentication
 function authenticate(req, res, next) {
+ 
+  if(req.method !== "POST") {
+    return res.status(400).json({ message: "Bad request : only POST request is allowed " });
+  }
+
   // Get the API key passed in 'api-key' header
   const apiKey = req.headers["api-key"];
   if(!apiKey) {
