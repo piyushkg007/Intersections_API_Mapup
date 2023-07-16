@@ -12,7 +12,7 @@ This Node.js application implements a Line Intersection API using the Express fr
 
 2. Install the dependencies by running the following command in the project directory:
 
-npm install express @turf/turf fs body-parser
+npm i
 
 ## Usage
 
